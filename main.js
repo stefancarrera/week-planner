@@ -1,5 +1,12 @@
 var data = {
-  entries: [],
+  // entries: [],
+  mon: [],
+  tue: [],
+  wed: [],
+  thu: [],
+  fri: [],
+  sat: [],
+  sun: [],
   editing: null,
   nextEntryId: 1
 };
@@ -34,12 +41,28 @@ $form.addEventListener('submit', function (event) {
   $modal.className = 'modal hidden';
   var newEntry = {};
 
-  newEntry.day = $daySelect.value;
+  // newEntry.day = $daySelect.value;
   newEntry.time = $timeSelect.value;
   newEntry.description = $description.value;
   newEntry.eventId = data.nextEntryId;
 
   data.nextEntryId++;
+
+  if ($daySelect.value === 'M') {
+    data.mon.unshift(newEntry);
+  } else if ($daySelect.value === 'Tu') {
+    data.tue.unshift(newEntry);
+  } else if ($daySelect.value === 'W') {
+    data.wed.unshift(newEntry);
+  } else if ($daySelect.value === 'Th') {
+    data.thu.unshift(newEntry);
+  } else if ($daySelect.value === 'F') {
+    data.fri.unshift(newEntry);
+  } else if ($daySelect.value === 'Sa') {
+    data.sat.unshift(newEntry);
+  } else if ($daySelect.value === 'Su') {
+    data.sun.unshift(newEntry);
+  }
 
   // data.entries.unshift(newEntry);
 });
