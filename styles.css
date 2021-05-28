@@ -34,3 +34,7 @@
 table {
   width: 800px;
 }
+
+tr {
+  height: 20px;
+}
