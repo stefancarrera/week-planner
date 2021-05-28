@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -37,4 +41,31 @@ table {
 
 tr {
   height: 20px;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+
+  /* align-content: center; */
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  background-color: white;
+  position: fixed;
+  top: 100px;
+}
+
+.drop-downs {
+  justify-content: flex-start;
+}
+
+.buttonRow {
+  justify-content: flex-end;
 }
