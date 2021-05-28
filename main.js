@@ -25,8 +25,16 @@ $addEntry.addEventListener('click', function (event) {
 });
 
 var $form = document.querySelector('form');
+var $daySelect = document.querySelector('#day-select');
+var $timeSelect = document.querySelector('#time-select');
+var $description = document.querySelector('#description');
 
 $form.addEventListener('submit', function (event) {
-
   $modal.className = 'modal hidden';
+  var newEntry = {};
+
+  newEntry.day = $daySelect.value;
+  newEntry.time = $timeSelect.value;
+  newEntry.description = $description.value;
+
 });
