@@ -30,11 +30,15 @@ var $timeSelect = document.querySelector('#time-select');
 var $description = document.querySelector('#description');
 
 $form.addEventListener('submit', function (event) {
+  event.preventDefault();
   $modal.className = 'modal hidden';
   var newEntry = {};
 
   newEntry.day = $daySelect.value;
   newEntry.time = $timeSelect.value;
   newEntry.description = $description.value;
+  newEntry.eventId = data.nextEntryId;
 
+  data.nextEntryId++;
+  data.entries.unshift(newEntry);
 });
