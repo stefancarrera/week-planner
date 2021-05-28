@@ -40,5 +40,13 @@ $form.addEventListener('submit', function (event) {
   newEntry.eventId = data.nextEntryId;
 
   data.nextEntryId++;
-  data.entries.unshift(newEntry);
+
+  // data.entries.unshift(newEntry);
 });
+
+// function sort(entryObj) {
+//   var tempArr = [];
+//   tempArr = data.entries;
+//   tempArr.push(entryObj);
+
+// }
