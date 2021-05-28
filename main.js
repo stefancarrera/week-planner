@@ -66,9 +66,26 @@ $form.addEventListener('submit', function (event) {
   // data.entries.unshift(newEntry);
 });
 
-// function sort(entryObj) {
+// function sortDay(entryObj) {
 //   var sorted = entryObj;
-//   entryObj.sort();
+//   entryObj.sort(function (a, b){
+//     return a.time - b. time;
+//   });
 
 //   return sorted;
 // }
+
+// function convertTime(entryObj) {
+//   var currentTime = parseInt(entryObj.time);
+//   var outputTime = '';
+//   if (currentTime > 12){
+//     currentTime-=12;
+//     outputTime += String(currentTime) + ":00 PM";
+//   } else {
+//     outputTime += String(currentTime) + ":00 AM";
+//   }
+//   return outputTime;
+// }
+
+// var testTime = convertTime(data.sat[0]);
+// console.log('first saturday time:', testTime);
