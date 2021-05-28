@@ -41,7 +41,6 @@ $form.addEventListener('submit', function (event) {
   $modal.className = 'modal hidden';
   var newEntry = {};
 
-  // newEntry.day = $daySelect.value;
   newEntry.time = $timeSelect.value;
   newEntry.description = $description.value;
   newEntry.eventId = data.nextEntryId;
@@ -68,8 +67,8 @@ $form.addEventListener('submit', function (event) {
 });
 
 // function sort(entryObj) {
-//   var tempArr = [];
-//   tempArr = data.entries;
-//   tempArr.push(entryObj);
+//   var sorted = entryObj;
+//   entryObj.sort();
 
+//   return sorted;
 // }
