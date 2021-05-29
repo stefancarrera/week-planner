@@ -38,6 +38,12 @@ var $description = document.querySelector('#description');
 
 // var $row7days = document.querySelector('.sevenDays');
 // var $saturdayButton = document.querySelector('.saturdayBut');
+// var $sundayButton = document.querySelector('.sundayBut');
+// var $mondayButton = document.querySelector('.mondayBut');
+// var $tuesdayButton = document.querySelector('tuesdayBut');
+// var $wednesdayButton = document.querySelector('wednesdayBut');
+// var $thursdayButton = document.querySelector('thursdayBut');
+// var $fridayButton = document.querySelector('firdayBut');
 
 $form.addEventListener('submit', function (event) {
   event.preventDefault();
@@ -109,8 +115,19 @@ $form.addEventListener('submit', function (event) {
 //   tableBody.appendChild(tableRow);
 // }
 
-// $row7days.addEventListener('click', function(event){
-//     if (event.target === $saturdayButton){
-//       console.log('saturday clicked!');
+// $row7days.addEventListener('click', function (event) {
+//   tableBody.replaceChildren();
+//   if (event.target === $saturdayButton) {
+//     sortDay(data.sat);
+//     for (var i = 0; i < data.sat.length; i++) {
+//       renderTable(data.sat[i]);
 //     }
-// })
+//   } else if {
+//     (event.target === $sundayButton) {
+//       sortDay(data.sun);
+//       for (var i = 0; i < data.sun.length; i++) {
+//         renderTable(data.sun[i]);
+//       }
+//     }
+//   }
+// });
