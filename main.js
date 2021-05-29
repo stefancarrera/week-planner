@@ -68,8 +68,8 @@ $form.addEventListener('submit', function (event) {
 
 // function sortDay(entryObj) {
 //   var sorted = entryObj;
-//   entryObj.sort(function (a, b){
-//     return a.time - b. time;
+//   entryObj.sort(function (a, b) {
+//     return a.time - b.time;
 //   });
 
 //   return sorted;
@@ -78,14 +78,30 @@ $form.addEventListener('submit', function (event) {
 // function convertTime(entryObj) {
 //   var currentTime = parseInt(entryObj.time);
 //   var outputTime = '';
-//   if (currentTime > 12){
-//     currentTime-=12;
-//     outputTime += String(currentTime) + ":00 PM";
+//   if (currentTime > 12) {
+//     currentTime -= 12;
+//     outputTime += String(currentTime) + ':00 PM';
 //   } else {
-//     outputTime += String(currentTime) + ":00 AM";
+//     outputTime += String(currentTime) + ':00 AM';
 //   }
 //   return outputTime;
 // }
 
-// var testTime = convertTime(data.sat[0]);
-// console.log('first saturday time:', testTime);
+// // var testTime = convertTime(data.sat[0]);
+// // console.log('first saturday time:', testTime);
+
+// var tableBody = document.querySelector('tbody');
+
+// function renderTable(entryObj) {
+//   var tableRow = document.createElement('tr');
+//   var timeData = document.createElement('td');
+//   var fixedTime = convertTime(entryObj.time);
+//   timeData.textContent = fixedTime;
+//   tableRow.appendChild(timeData);
+
+//   var descriptionData = document.createElement('td');
+//   descriptionData.textContent = entryObj.description;
+//   tableRow.appendChild(descriptionData);
+
+//   tableBody.appendChild(tableRow);
+// }
