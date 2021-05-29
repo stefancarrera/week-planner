@@ -36,6 +36,9 @@ var $daySelect = document.querySelector('#day-select');
 var $timeSelect = document.querySelector('#time-select');
 var $description = document.querySelector('#description');
 
+// var $row7days = document.querySelector('.sevenDays');
+// var $saturdayButton = document.querySelector('.saturdayBut');
+
 $form.addEventListener('submit', function (event) {
   event.preventDefault();
   $modal.className = 'modal hidden';
@@ -87,15 +90,15 @@ $form.addEventListener('submit', function (event) {
 //   return outputTime;
 // }
 
-// // var testTime = convertTime(data.sat[0]);
-// // console.log('first saturday time:', testTime);
+// var testTime = convertTime(data.sat[0]);
+// console.log('first saturday time:', testTime);
 
 // var tableBody = document.querySelector('tbody');
 
 // function renderTable(entryObj) {
 //   var tableRow = document.createElement('tr');
 //   var timeData = document.createElement('td');
-//   var fixedTime = convertTime(entryObj.time);
+//   var fixedTime = convertTime(entryObj);
 //   timeData.textContent = fixedTime;
 //   tableRow.appendChild(timeData);
 
@@ -105,3 +108,9 @@ $form.addEventListener('submit', function (event) {
 
 //   tableBody.appendChild(tableRow);
 // }
+
+// $row7days.addEventListener('click', function(event){
+//     if (event.target === $saturdayButton){
+//       console.log('saturday clicked!');
+//     }
+// })
